@@ -1,0 +1,293 @@
+@media screen and (max-width: 500px){
+   #grilla{
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
+@media screen and (min-width: 768px){
+   #grilla{
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
+@media screen and (min-width: 1024px){
+   #grilla{
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav productos publicidad"
+      "nav servicios publicidad"
+      "nav footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px; 
+    grid-template-columns: 20% auto 15%;
+ }
+ .border {
+   border: 1px solid white;
+ }
+ body{
+   font-family: 'Roboto', sans-serif;
+ }
+ h1{
+    text-align: center;
+ }
+ header {
+    grid-area: header;
+    color: white;
+ }
+ .logo{
+    float: left;
+    margin-left: 20px;
+ }
+ nav{
+   padding: 1rem;
+}
+nav ul{
+   list-style: none;
+   background-color:#444744 ;
+   display: flex;
+   justify-content: space-around;
+   width: 1200px;
+   float: right;
+   margin-top: 15px;
+ }
+ nav ul a{
+   color:white;
+   text-decoration: none;
+   padding: 0.7rem;
+   display: block;
+ }
+ nav ul a:hover{
+   background-color: antiquewhite;
+   color:darkred;
+   font-weight: bold;
+ }
+ul{
+   list-style: none;
+   font-size: 0;
+}
+li{
+   display: inline-block;
+   width: 25%;
+   position: relative;
+   font-size: 14px;
+}
+ footer {
+    grid-area: footer;
+    color: white;
+ }
+ section#productos {
+    grid-area: productos;    
+    color: white;
+   padding: 1rem;
+ }
+ section#productos p{
+   font-family: 'Hubballi', cursive;
+   opacity: .7;
+   color: black;
+   background-color: white;
+ }
+ section#servicios {
+    grid-area: servicios;  
+    color: white;   
+ }
+ nav {
+    grid-area: nav;
+    color: white;
+ }
+.fotos{
+    display: flex;
+    width: 200px;
+    height: 100px;
+    opacity: .4;
+    border: double 2px grey ;
+    transition: transform .5s;
+ }
+.fotos:hover{
+   opacity: 1;
+   border: solid white;
+   transform: scale(1.1);
+ }
+ aside {
+    grid-area: publicidad;
+    color: white;
+ }
+ .grilla1{
+   display: grid;
+   grid-template-areas:
+     "header header header"
+     "nav productos publicidad"
+     "nav productos publicidad"
+     "nav footer footer";
+   grid-template-rows: 100px 1fr 1fr 75px; 
+   grid-template-columns: 20% auto 15%;
+}
+.border {
+   border: 1px solid white;
+}
+header {
+   grid-area: header;
+   color: white;
+}
+.logocontacto{
+   float: left;
+   margin: 15px;
+}
+footer {
+   grid-area: footer;
+   color: white;
+}
+section#productos {
+   grid-area: productos;
+   color: white;
+}
+nav {
+   grid-area: nav;
+   color: white;
+}
+aside {
+   grid-area: publicidad;
+   color: white;
+}
+#grilla2{
+   display: grid;
+   grid-template-areas:
+     "header header header"
+     "nav productos publicidad"
+     "nav productos publicidad"
+     "nav footer footer";
+   grid-template-rows: 100px 1fr 1fr 75px; 
+   grid-template-columns: 20% auto 15%;
+}
+.border {
+   border: 1px solid white;
+}
+header {
+   grid-area: header;
+   color: white;
+}
+.logocontacto{
+   float: left;
+   margin: 15px;
+}
+footer {
+   grid-area: footer;
+   color: white;
+}
+section#productos {
+   grid-area: productos;
+   color: white;
+}
+nav {
+   grid-area: nav;
+   color: white;
+}
+.fotostaff{
+   display: flex;
+   width: 200px;
+   height: 100px;
+   opacity: .4;
+   border: double 2px grey ;
+   transition: transform .5s;
+}
+.fotostaff:hover{
+  opacity: 1;
+  border: solid white;
+  transform: scale(1.1);
+}
+.tecnico1{
+   background-color: white;
+   opacity: .7;
+   color: black;
+}
+.tecnico2{
+   background-color: white;
+   opacity: .7;
+   color: black;
+}
+.tecnico3{
+   background-color: white;
+   opacity: .7;
+   color: black;
+}
+.tecnico4{
+   background-color: white;
+   opacity: .7;
+   color: black;
+}
+aside {
+   grid-area: publicidad;
+   color: white;
+}
+#grilla3{
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav productos publicidad"
+        "nav productos publicidad"
+        "nav footer footer";
+      grid-template-rows: 100px 1fr 1fr 75px; 
+      grid-template-columns: 20% auto 15%;
+   }
+   .border {
+      border: 1px solid white;
+   }
+   header {
+      grid-area: header;
+      color: white;
+   }
+   .logocontacto{
+      float: left;
+      margin: 15px;
+   }
+   footer {
+      grid-area: footer;
+      color: white;
+   }
+   section#productos {
+      grid-area: productos;
+      color: white;
+   }
+   nav {
+      grid-area: nav;
+      color: white;
+   }
+   aside {
+      grid-area: publicidad;
+      color: white;
+   }
+   #grilla4{
+         display: grid;
+         grid-template-areas:
+           "header header header"
+           "nav productos publicidad"
+           "nav productos publicidad"
+           "nav footer footer";
+         grid-template-rows: 100px 1fr 1fr 75px; 
+         grid-template-columns: 20% auto 15%;
+      }
+      .border {
+         border: 1px solid white
+      }
+      header {
+         grid-area: header;
+      }
+      footer {
+         grid-area: footer;
+      }
+      section#productos {
+         grid-area: productos;     
+      }
+      nav {
+         grid-area: nav;
+      }
+      aside {
+         grid-area: publicidad;
+      }
+      
